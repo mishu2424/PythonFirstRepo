@@ -1,0 +1,7 @@
+The task : Chemistry quiz
+Due date: 2024-10-03
+Status: Pending
+
+The task : Math assignment
+Due date: 2024-09-31
+Status: Completed
