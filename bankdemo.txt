@@ -1,0 +1,4 @@
+{"username": "Barsha Deb", "email": "barshadeb7@gmail.com", "password": "ad36cc662c7f08e6a043448203d0cbedc97db76b09392bc9043f30e7c2a6240e"}
+{"username": "Apurbo Dey Mishu", "email": "apurbomishu24@gmail.com", "password": "570aa909ddaf020dc1223f69b377c15d445b0003f6036802d8f16db1b7002e48"}
+{"username": "Arnob Dey", "email": "arnobdey27@gmail.com", "password": "225b9366ba83b2aee70ab1d37b3f69996a3411ed111eb1f5de5d94d9aed5811e"}
+{"username": "Manik dey", "email": "manikdey23@gmail.com", "password": "9005daa24f5f21fbe38ba0420de480957105c63b818ce6b57dc2c11490d78ea7"}
