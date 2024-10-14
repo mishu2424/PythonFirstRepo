@@ -85,7 +85,8 @@ def signin():
                     print(f"Your current balance is {user_infos['balance']}")
                     print("1.Deposit")
                     print("2.Withdraw")
-                    print("3.Exit")
+                    print("3.History")
+                    print("4.Exit")
                     user_choice=input('')
                     if user_choice=='1' or user_choice.lower().strip()=='deposit':
                         print("Enter the amount you want to deposit: ")
@@ -114,8 +115,16 @@ def signin():
                             user_infos['balance']-=deducted_money 
                             print(f"Your current balance is {user_infos['balance']}")
                         elif user_infos['balance'] < deducted_money:print("Insufficicent balance!")
+                    if user_choice=='3' or user_choice.lower().strip()=='history':
+                        with open('transactions.txt','r') as filehandle:
+                            for line in filehandle:
+                                user_datas=json.loads(line)
+                                if user_datas['email']==email and user_datas['username']==username.lower():
+                                    print("Your transactions:")
+                                    print(f"{user_datas['description']} Time:{user_datas['time']}")
 
-                    if user_choice=='3' or user_choice.lower().strip()=='exit':
+
+                    if user_choice=='4' or user_choice.lower().strip()=='exit':
                         break
                 user_found=True
                 
@@ -173,7 +182,7 @@ def signin():
 # 225b9366ba83b2aee70ab1d37b3f69996a3411ed111eb1f5de5d94d9aed5811e
 
 def authentication():
-    print("Welcome to RBC Bank.")
+    print("Welcome to Barsha Bank.")
     print('Sign up')
     print('Sign in')
     print('Exit')

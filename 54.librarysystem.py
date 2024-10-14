@@ -1,51 +1,9 @@
-import urllib.request, urllib.parse, json, re, math
+#Buying a book from a library using web scraping-
+import urllib.request, urllib.parse, json, re, time, math
 from bs4 import BeautifulSoup
 
 html=urllib.request.urlopen('https://books.toscrape.com/')
 soup=BeautifulSoup(html,'html.parser')
-# print(soup.prettify())
-# tags=soup.find('ul',class_="nav nav-list")
-# lsttag=tags.find_all('li')
-# for tag in lsttag:
-#     t=tag.find('a')
-#     print(t.string.strip())
-#     print(t.get('href',None))
-
-#Get all the books information-
-# tags=soup.find_all('article',class_="product_pod")
-# for tag in tags:
-#     t=tag.find('h3')
-#     p=tag.find('p',class_="price_color")
-#     star=tag.find('p',class_="star-rating")
-#     availability=tag.find('p',class_="instock availability")
-#     # print(t.string)
-#     a=t.find('a')
-#     print(f"Book Name: {a.get('title',None)}")
-#     print(f"Price: {p.text}")
-#     print(f"Rate:{star.get("class",None)[1]} Stars")
-#     print(f"Availability:{availability.text.strip()}")
-
-# print(lsttag[2])
-
-# t=lsttag[1].find('a')
-# print(t.string.strip())
-# print(t.get('href',None))
-
-#Searching link sorting by name-
-# bookname=input('Search for the genre: ')
-# tags=soup.find('ul',class_="nav nav-list")
-# lsttag=tags.find_all('li')
-# found=False
-# for tag in lsttag:
-#     t=tag.find('a')
-#     if bookname.capitalize()==t.string.strip():
-#         print(t.get('href',None))
-#         found=True
-
-# if not found:
-#     print("Not found!")
-
-#Searching for a book and it's price and availability by it's genre-
 bookname=input('Search for the genre: ')
 tags=soup.find('ul',class_="nav nav-list")
 lsttag=tags.find_all('li')
@@ -96,7 +54,10 @@ for tag in seltags:
                 email=input("Enter your email: ").strip()
                 password=input("Enter your password: ").strip()
                 found=False
+                transaction=False
                 user_lst=list()
+                user_dic=dict()
+                user_transaction=list()
                 with open('bankinguserids.txt','r') as f:
                     for line in f:
                         user_infos=json.loads(line)
@@ -104,7 +65,15 @@ for tag in seltags:
                             if user_infos['balance']>=float(bookPrice):
                                 print("Your purchase has been completed!")
                                 user_infos['balance']-=math.ceil(float(bookPrice))
-                        
+                                t=time.localtime()
+                                formattedTime=time.strftime("%Y-%m-%d %H:%M:%S",t)
+                                user_dic['time']=formattedTime
+                                user_dic['description']=f"You bought a book called {getName}"
+                                user_dic['username']=user_infos['username']
+                                user_dic['email']=user_infos['email']
+                                user_transaction.append(user_dic)
+                                transaction=True
+
                             elif  user_infos['balance']<float(bookPrice):
                                 print("Insufficient balance in your account!")
                         found=True
@@ -114,6 +83,9 @@ for tag in seltags:
                 with open('bankinguserids.txt','w') as fh:
                     for user in user_lst:
                         fh.writelines(json.dumps(user)+'\n')
-
+                if transaction:
+                    with open('transactions.txt','a') as fhandle:
+                        for user in user_transaction:
+                            fhandle.writelines(json.dumps(user)+'\n')
         else:   
             quit()

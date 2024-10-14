@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <database>
+        <host>localhost</host>
+        <port>5432</port>
+        <username>admin</username>
+        <password>password123</password>
+    </database>
+    <logging>
+        <level>DEBUG</level>
+        <file>app.log</file>
+    </logging>
+</configuration>
