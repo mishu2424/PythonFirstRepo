@@ -1,6 +1,2 @@
-{"username": "barsha deb", "email": "barshadeb7@gmail.com", "password": "c1bfe0e122b1ea947afc95a4cd15202e0eaa30776f7b03a679a6008af0175183"}
-{"username": "apurbo dey mishu", "email": "apurbomishu24@gmail.com", "password": "570aa909ddaf020dc1223f69b377c15d445b0003f6036802d8f16db1b7002e48"}
-{"username": "arnob dey", "email": "arnobdey27@gmail.com", "password": "225b9366ba83b2aee70ab1d37b3f69996a3411ed111eb1f5de5d94d9aed5811e"}
-{"username": "manik dey", "email": "manikdey23@gmail.com", "password": "9005daa24f5f21fbe38ba0420de480957105c63b818ce6b57dc2c11490d78ea7"}
-{"username": "hennie moz", "email": "henniereeq34@gmail.com", "address": "3250 Laird Road", "phone_no": "+1 234 353 1237", "sin_no": "3252", "balance": 16, "password": "f7a62b67f03abefdc8cfeeefae8c027d6f48f3145a9b95aefc19582ad1316784"}
-{"username": "manik dey", "email": "manikdey66@gmail.com", "address": "13/05A, Ottawa Bangla Street, Ottawa", "phone_no": "+13453453546", "sin_no": "4567", "balance": 23, "password": "225b9366ba83b2aee70ab1d37b3f69996a3411ed111eb1f5de5d94d9aed5811e"}
+{"username": "hennie moz", "email": "henniereeq34@gmail.com", "address": "3250 Laird Road", "phone_no": "+1 234 353 1237", "sin_no": "3252", "balance": 1828.65, "password": "f7a62b67f03abefdc8cfeeefae8c027d6f48f3145a9b95aefc19582ad1316784"}
+{"username": "manik dey", "email": "manikdey66@gmail.com", "address": "13/05A, Ottawa Bangla Street, Ottawa", "phone_no": "+13453453546", "sin_no": "4567", "balance": 2350, "password": "225b9366ba83b2aee70ab1d37b3f69996a3411ed111eb1f5de5d94d9aed5811e"}
