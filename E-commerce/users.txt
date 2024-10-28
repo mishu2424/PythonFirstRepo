@@ -1,0 +1,1 @@
+{"username": "apurbo dey mishu", "email": "apurbomishu24@gmail.com", "password": "ba1ae3474ae85ce97f3cc44d4482fe4736ea8ec058497ff3510fbb8581518138"}

@@ -1,0 +1,3 @@
+{"name": "Home Security Camera", "Price": "89.99"}
+{"name": "Action Camera", "Price": "299.99"}
+{"name": "Tablet", "Price": "249.99"}

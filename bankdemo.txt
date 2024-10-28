@@ -3,3 +3,5 @@
 {"username": "Arnob Dey", "email": "arnobdey27@gmail.com", "password": "225b9366ba83b2aee70ab1d37b3f69996a3411ed111eb1f5de5d94d9aed5811e"}
 {"username": "Manik dey", "email": "manikdey23@gmail.com", "password": "9005daa24f5f21fbe38ba0420de480957105c63b818ce6b57dc2c11490d78ea7"}
 {"username": "narayon dey noyon", "email": "noyon23@gmail.com", "password": "ba1ae3474ae85ce97f3cc44d4482fe4736ea8ec058497ff3510fbb8581518138"}
+{"username": "ziang ju", "email": "zianjuzian12@gmail.com", "password": "bf942787ed56cbf16236bdc87956736f2964a1aaa2f91e9d982aa85f4314d7ce"}
+{"username": "kin ju", "email": "kinjan123@gmail.com", "password": "ba1ae3474ae85ce97f3cc44d4482fe4736ea8ec058497ff3510fbb8581518138"}

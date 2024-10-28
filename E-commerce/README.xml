@@ -1,0 +1,77 @@
+<ecommerce>
+    <categories>
+        <category name="Electronics" link="https://example.com/electronics" />
+        <category name="Accessories" link="https://example.com/accessories" />
+        <category name="Home-Appliances" link="https://example.com/home-appliances" />
+        <category name="Fashion" link="https://example.com/fashion" />
+        <category name="Wearables" link="https://example.com/wearables" />
+        <category name="Fitness" link="https://example.com/fitness" />
+    </categories>
+    <products>
+        <product id="1">
+            <name>Wireless Mouse</name>
+            <description>Ergonomic wireless mouse with a sleek design.</description>
+            <price>25.99</price>
+            <category>Electronics</category>
+            <image_url>https://example.com/images/wireless_mouse.jpg</image_url>
+            <stock>100</stock>
+        </product>
+        <product id="2">
+            <name>Bluetooth Headphones</name>
+            <description>High-quality sound with noise cancellation.</description>
+            <price>79.99</price>
+            <category>Electronics</category>
+            <image_url>https://example.com/images/bluetooth_headphones.jpg</image_url>
+            <stock>50</stock>
+        </product>
+        <product id="3">
+            <name>Gaming Keyboard</name>
+            <description>Mechanical keyboard with RGB lighting.</description>
+            <price>59.99</price>
+            <category>Electronics</category>
+            <image_url>https://example.com/images/gaming_keyboard.jpg</image_url>
+            <stock>75</stock>
+        </product>
+        <product id="4">
+            <name>Laptop Stand</name>
+            <description>Adjustable laptop stand for better ergonomics.</description>
+            <price>19.99</price>
+            <category>Accessories</category>
+            <image_url>https://example.com/images/laptop_stand.jpg</image_url>
+            <stock>200</stock>
+        </product>
+        <product id="5">
+            <name>Coffee Maker</name>
+            <description>Brew your perfect cup of coffee every morning.</description>
+            <price>49.99</price>
+            <category>Home Appliances</category>
+            <image_url>https://example.com/images/coffee_maker.jpg</image_url>
+            <stock>30</stock>
+        </product>
+        <product id="6">
+            <name>Backpack</name>
+            <description>Durable backpack for travel or school.</description>
+            <price>39.99</price>
+            <category>Fashion</category>
+            <image_url>https://example.com/images/backpack.jpg</image_url>
+            <stock>150</stock>
+        </product>
+        <product id="7">
+            <name>Smartwatch</name>
+            <description>Stay connected with notifications and health tracking.</description>
+            <price>199.99</price>
+            <category>Wearables</category>
+            <image_url>https://example.com/images/smartwatch.jpg</image_url>
+            <stock>25</stock>
+        </product>
+        <product id="8">
+            <name>Yoga Mat</name>
+            <description>Eco-friendly yoga mat with non-slip surface.</description>
+            <price>29.99</price>
+            <category>Fitness</category>
+            <image_url>https://example.com/images/yoga_mat.jpg</image_url>
+            <stock>0</stock>
+        </product>
+    </products>
+</ecommerce>
+
